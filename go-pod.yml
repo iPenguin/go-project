@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: go-pod
+spec:
+  containers:
+  - image: jenkins/jnlp-agent-golang
+    name: go-pod
+    volumeMounts:
+    - mountPath: /home/jenkins/agent
+      name: builddir
+  volumes:
+  - name: builddir
+    emptydir: {}
+
