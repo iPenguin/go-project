@@ -2,7 +2,7 @@ pipeline {
     agent {
         kubernetes {
             label 'go-jenkins-worker'
-            idelMinutes 5
+            idleMinutes 5
             yamlFile 'go-pod.yml'
         }
     }
