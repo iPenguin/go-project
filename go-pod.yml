@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - image: jenkins/jnlp-agent-golang
-    name: go-pod
+    name: jnlp
     volumeMounts:
     - mountPath: /home/jenkins/agent
       name: builddir
